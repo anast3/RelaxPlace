@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255,201,14,0.3);
+	font-family: 'Open Sans';
+	flex-direction: column;
+}
+
+p {
+	/*color: rgba(163,73,164,1);*/
+	/*color: rgba(106,136,15);*/
+	color: black;
+	font-size: 18px;
+}
+
+select {
+	padding: 10px 10px;
+	border: 2px solid rgba(255,201,14,0.5);
+	font-size: 18px;
+	background-color: #efefef;
+	cursor: pointer;
+}
+
+button {
+	font-size: 18px;
+	font-weight: 500;
+	padding: 10px 20px;
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid rgba(255,201,14,0.5);
+	transition: 0.2s ease all;
+}
+
+button:hover {
+	background-color: rgba(255,201,14,0.5);
+	color: #999;
+	transition: 0.2s ease all;
+}
+
+.startScreen {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#startScreen h1, #startScreen b {
+	font-family: 'Berlin Sans FB';
+	color: rgba(0,162,232,1);
+}
+
+#startScreen h1 {
+	font-size: 56px;
+	color: rgba(0,162,232,1);
+	/*position: absolute;*/
+	/*left: 200px;*/
+	/*top: 50px;*/
+	margin-bottom: 100px;
+}
+
+p.description {
+	border: 1px solid rgba(0,162,232,1);
+	padding: 20px 40px;
+	margin-bottom: 150px;
+}
+
+#startScreen button {
+	background: white;
+	padding: 10px 20px;
+	border: 1px solid white;
+	font-size: 18px;
+	cursor: pointer;
+	margin-top: 18px;
+	box-shadow: 0 0 10px 3px rgba(100,100,100,.1);
+	transition: 0.2s all ease;
+}
+
+#startScreen button:hover {
+	background-color: black;
+	border: 1px solid black;
+	color: rgba(0,162,232,1);
+	transition: 0.2s all ease;
+}
+
+.processSection {
+	text-align: center;
+}
+
+.processSection p {
+	margin-bottom: 40px;
+}
+
+.d-none {
+	display: none;
+}
+
+.resultCard {
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 3px rgba(100,100,100,.2);
+	display: flex;
+}
+
+/*.resultCard img {
+	width: 300px;
+	height: 400px;
+	margin-right: 50px;
+}*/
+
+.resultCard .rightside {
+	width: 300px;
+	padding-left: 50px;
+	font-size: 14px;
+}
+
+.resultCard .rightside p:first-child {
+	font-weight: 500;
+}
+
+.resultCard .rightside #resultDescription {
+	font-size: 14px;
+}
+
+.resultCard .rightside #btnMoreResults {
+	margin: 0 auto;
+	margin-top: 20px;
+	display: block;
+}
+
+.divAverage {
+	margin-top: 20px;
+}
+
+#leftside {
+	/*background: url(https://cms.enjourney.ru/upload/Jana/Sierra%20Leone/sierperv.jpg);*/
+	background-size: cover;
+	background-position: center center;
+	width: 300px;
+	height: 400px;
+	margin-right: 50px;
+}

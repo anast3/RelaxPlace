@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RelaxPlace - куда поехать отдыхать?</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="resort.png" type="image/x-icon">
+</head>
+<body>
+	<section class="startScreen" id="startScreen">
+		<div>
+			<div class="logo"><h1>RelaxPlace</h1></div>
+			<p class="description">Не можете определиться, куда Вы хотите поехать отдыхать?<br><br>
+				Экспертная система <b>RelaxPlace</b> подберет для вас наилучшие варианты, <br>
+				основанные на ваших предпочтениях.
+			</p>
+		</div>
+		<div>
+			<p>Чтобы начать подбор места для отдыха, нажмите:</p>
+			<button id="btnStart">
+				Начать >>
+			</button>
+		</div>
+	</section>
+
+	<section class="processSection d-none" id="temperatureScreen">
+		<p>Вы хотели бы в тёплое место или туда, где попрохладнее?</p>
+		<select name="" id="temperatureSelect">
+			<option value="Тепло">Тёплое</option>
+			<option value="Холодно">Холодное</option>
+		</select>
+		<br><br>
+		<button id="btnTemperatureScreen">Следующий шаг ></button>
+	</section>
+
+	<section class="processSection d-none" id="waterPresenceScreen">
+		<p>В этом месте должно быть море, озеро или океан?</p>
+		<select name="" id="waterPresenceSelect">
+			<option value="1">Да</option>
+			<option value="0">Не обязательно</option>
+		</select>
+		<br><br>
+		<button id="btnWaterPresenceScreen">Следующий шаг ></button>
+	</section>
+
+	<section class="processSection d-none" id="attractionScreen">
+		<p>Вы хотите посмотреть достопримечательности или просто отдохнуть?</p>
+		<select name="" id="attractionSelect">
+			<option value="1">Достопримечательности</option>
+			<option value="0">Отдохнуть</option>
+		</select>
+		<br><br>
+		<button id="btnAttractionScreen">Следующий шаг ></button>
+	</section>
+
+	<section class="processSection d-none" id="rangeScreen">
+		<p>Насколько далеко от России вы хотите уехать?</p>
+		<select name="" id="rangeSelect">
+			<option value="В России">В России</option>
+			<option value="Близко">Недалеко</option>
+			<option value="Средне">Подальше</option>
+			<option value="Далеко">Далеко</option>
+		</select>
+		<br><br>
+		<button id="btnResults">Посмотреть конечный результат</button>
+	</section>
+
+	<section class="resultScreen d-none" id="resultScreen">
+		<div class="resultCard">
+			<div class="leftside" id="leftside"></div>
+			<div class="rightside">
+				<p>Вам отлично подойдет вот это место!</p>
+				<br>
+				<p>Это <b><span id="resultPlace">asd</span></b>.</p>
+				<br><br>
+				<p id="resultDescription">1Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloremque dolore quasi, obcaecati, nam nesciunt dignissimos voluptatibus fuga voluptas, nisi provident molestiae facilis laboriosam exercitationem minus vero eaque. Eum dignissimos nesciunt repudiandae voluptatum earum et, distinctio ad atque ullam eaque.</p>
+				<button id="btnMoreResults" onclick="window.location.reload()">Подобрать ещё</button>
+			</div>
+		</div>
+	</section>
+
+	<div class="divAverage d-none" id="divAverage">
+		Вам может подойди <b><span id="averageResult"></span></b>
+	</div>
+
+	<script src="data.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
